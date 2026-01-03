@@ -10,9 +10,9 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-dark-900">
       <Navigation />
-      <section id="home" className="pt-16">
+      <section id="home">
         <Hero />
       </section>
       <section id="about">
@@ -36,8 +36,15 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
-      <footer className="bg-slate-900 text-gray-400 text-center py-8 border-t border-slate-700">
-        <p>© 2026 Priyanjali S Kadam. All rights reserved.</p>
+      <footer className="bg-dark-900 text-dark-400 text-center py-12 border-t border-dark-800">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <p className="text-sm mb-2">
+            © 2026 <span className="text-gradient font-semibold">Priyanjali S Kadam</span>. All rights reserved.
+          </p>
+          <p className="text-xs text-dark-500">
+            Crafted with precision and passion
+          </p>
+        </div>
       </footer>
     </div>
   );

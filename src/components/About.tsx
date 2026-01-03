@@ -1,35 +1,70 @@
+import { Target, Award, TrendingUp } from 'lucide-react';
+
 export default function About() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-12 text-center">About Me</h2>
+    <section className="section-padding bg-dark-900">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-6">
+            <span className="text-white">About </span>
+            <span className="text-gradient">Me</span>
+          </h2>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-primary-600 to-accent-600 mx-auto rounded-full"></div>
+        </div>
 
-        <div className="space-y-8">
-          <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-8 rounded-xl border border-blue-100">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">Professional Summary</h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              Versatile MBA aspirant with internship experience at the Bank of New York in post-trade compliance, enabling techno-functional skills across system workflows and operational controls. Backed by strong accounting and business fundamentals, further reinforced by five years of rigorous NCC training, which cultivated discipline, leadership, resilience and a strong sense of responsibility.
-            </p>
-            <p className="text-gray-700 leading-relaxed text-lg mt-4">
-              Beyond academics, I pursue creative interests in theatre, dance and marketing initiatives. I blend creativity with structure to deliver fresh, well-rounded perspectives and effectively bridge business objectives with process efficiency, delivering structured, innovative, and technology-aligned solutions.
-            </p>
+        <div className="space-y-12">
+          <div className="relative p-10 rounded-3xl bg-dark-800 border-2 border-dark-700 shadow-elegant hover:shadow-elegant-lg hover:border-primary-500/50 transition-all duration-300">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="p-4 bg-gradient-to-br from-primary-600 to-accent-600 rounded-2xl shadow-elegant">
+                <Target className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold text-white">Professional Summary</h3>
+            </div>
+            <div className="space-y-4 text-gray-300 leading-relaxed text-lg">
+              <p>
+                Versatile <span className="font-bold text-primary-400">MBA aspirant</span> with internship experience at the <span className="font-bold text-accent-400">Bank of New York</span> in post-trade compliance, enabling techno-functional skills across system workflows and operational controls. Backed by strong accounting and business fundamentals, further reinforced by <span className="font-bold text-primary-400">five years of rigorous NCC training</span>, which cultivated discipline, leadership, resilience and a strong sense of responsibility.
+              </p>
+              <p>
+                Beyond academics, I pursue creative interests in <span className="font-bold text-accent-400">theatre, dance and marketing initiatives</span>. I blend creativity with structure to deliver fresh, well-rounded perspectives and effectively bridge business objectives with process efficiency, delivering structured, innovative, and technology-aligned solutions.
+              </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
-              <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
-              <p className="text-gray-700 font-medium">Years of Leadership</p>
-              <p className="text-sm text-gray-600 mt-2">NCC Training & University Roles</p>
+            <div className="group relative p-8 rounded-2xl bg-gradient-to-br from-primary-600 to-primary-700 text-white shadow-elegant hover:shadow-elegant-lg transition-all duration-300 transform hover:-translate-y-2">
+              <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+              <div className="relative">
+                <div className="text-5xl font-bold mb-3">5+</div>
+                <div className="flex items-center gap-2 mb-2">
+                  <Award className="w-5 h-5" />
+                  <p className="text-xl font-semibold">Years of Leadership</p>
+                </div>
+                <p className="text-primary-100 text-sm">NCC Training & University Roles</p>
+              </div>
             </div>
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
-              <div className="text-3xl font-bold text-blue-600 mb-2">97.64%</div>
-              <p className="text-gray-700 font-medium">CMAT Percentile</p>
-              <p className="text-sm text-gray-600 mt-2">Top Candidates Nationwide</p>
+            
+            <div className="group relative p-8 rounded-2xl bg-gradient-to-br from-accent-600 to-accent-700 text-white shadow-elegant hover:shadow-elegant-lg transition-all duration-300 transform hover:-translate-y-2">
+              <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+              <div className="relative">
+                <div className="text-5xl font-bold mb-3">97.64%</div>
+                <div className="flex items-center gap-2 mb-2">
+                  <TrendingUp className="w-5 h-5" />
+                  <p className="text-xl font-semibold">CMAT Percentile</p>
+                </div>
+                <p className="text-accent-100 text-sm">Top Candidates Nationwide</p>
+              </div>
             </div>
-            <div className="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
-              <div className="text-3xl font-bold text-blue-600 mb-2">₹3.28L+</div>
-              <p className="text-gray-700 font-medium">Total Scholarships</p>
-              <p className="text-sm text-gray-600 mt-2">Merit-Based Recognition</p>
+            
+            <div className="group relative p-8 rounded-2xl bg-gradient-to-br from-primary-500 via-accent-500 to-primary-600 text-white shadow-elegant hover:shadow-elegant-lg transition-all duration-300 transform hover:-translate-y-2">
+              <div className="absolute top-4 right-4 w-16 h-16 bg-white/20 rounded-full blur-xl"></div>
+              <div className="relative">
+                <div className="text-5xl font-bold mb-3">₹3.28L+</div>
+                <div className="flex items-center gap-2 mb-2">
+                  <Award className="w-5 h-5" />
+                  <p className="text-xl font-semibold">Total Scholarships</p>
+                </div>
+                <p className="text-white/90 text-sm">Merit-Based Recognition</p>
+              </div>
             </div>
           </div>
         </div>
